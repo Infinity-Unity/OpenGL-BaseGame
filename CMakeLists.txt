@@ -21,3 +21,6 @@ target_link_libraries(${PROJECT_NAME} glad)
 add_subdirectory(external/glew)
 target_link_libraries(${PROJECT_NAME} glew)
 
+#find_package(GLEW REQUIRED)
+#target_link_libraries(${PROJECT_NAME} PRIVATE GLEW::GLEW)
+
