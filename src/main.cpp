@@ -1,6 +1,6 @@
 #include <glad/glad.h>
 #include <gl/GL.h>
-
+//#include <gl/glew.h>
 #include <GLFW/glfw3.h>
 #include "iostream"
 
@@ -58,11 +58,12 @@ int main(void)
     std::cout << "Renderer: " << glGetString(GL_RENDERER) << "\n";
     std::cout << "OpenGL Version: " << glGetString(GL_VERSION) << "\n";
    
-    glClearColor(0.1f,0.2f,0.2f,0);
+    glClearColor(0.12f,0.5f,0.2f,0);
     
 
     while (!glfwWindowShouldClose(window))
     {
+        
         glClear(GL_COLOR_BUFFER_BIT);
         glViewport(0, 0, 800, 600);
         glfwSwapBuffers(window);
