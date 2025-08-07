@@ -62,7 +62,7 @@ int main(void)
     while (!glfwWindowShouldClose(window))
     {
         glClear(GL_COLOR_BUFFER_BIT);
-        glViewport(5, 5, 800, 600);
+        glViewport(0, 0, 800, 600);
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
